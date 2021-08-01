@@ -14,24 +14,9 @@ Online-Preview: https://mandrasch.github.io/11ty-up-massively/
 
 ## How to edit content
 
-Eleventy uses a "url filter" to convert links. It is simple to use and makes sure that links are working when this site is published to a subdirectory for GitHub Pages. 
+Page content can be found in `src/`-directory, see e.g. elements.html
 
-Instead of normal links use the following `{{'' | url}}` syntax. It will automagically link to `src/my-new-page.html`:
-
-```
-<a href={{'/my-new-page/' | url}}>My new page</a>
-```
-
-Including images:
-```
-<img src="{{'/images/my-new-image.jpg' | url}}">
-```
-
-Edit / update navigation:
-
-https://github.com/mandrasch/11ty-up-massively/blob/main/src/_includes/partials/nav.njk
-
-Add a new page:
+**Add a new page:**
 
 Just add a new .html or .md page and paste the the following at the top of the file:
 
@@ -40,6 +25,27 @@ Just add a new .html or .md page and paste the the following at the top of the f
 title: My site title
 layout: layouts/base.njk
 ---
+```
+
+**Link to a page:**
+
+Eleventy uses a "url filter" to convert links. It is simple to use and makes sure that links are working when this site is published to a subdirectory for GitHub Pages. 
+
+Instead of normal links use the following `{{'' | url}}` syntax. It will automagically link to `src/my-new-page.html`:
+
+```
+<a href={{'/my-new-page/' | url}}>My new page</a>
+```
+
+**Edit / update navigation**
+
+The navigation is in in [src_includes/partials/nav.njk](https://github.com/mandrasch/11ty-up-massively/blob/main/src/_includes/partials/nav.njk). Just edit the links.
+
+
+**Including images:**
+
+```
+<img src="{{'/images/my-new-image.jpg' | url}}">
 ```
 
 ## Commands for terminal
