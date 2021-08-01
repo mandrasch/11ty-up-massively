@@ -1,5 +1,5 @@
 # 11ty-massively
-Simple fork of html5up massively theme for static site generator [eleventy/11ty](https://www.google.com/search?q=eleventy+dev&oq=eleventy+dev&aqs=chrome..69i57j69i65j69i60l3.2229j0j1&sourceid=chrome&ie=UTF-8) (Open Source).
+Simple fork of html5up massively theme for static site generator [11ty/eleventy](https://www.google.com/search?q=eleventy+dev&oq=eleventy+dev&aqs=chrome..69i57j69i65j69i60l3.2229j0j1&sourceid=chrome&ie=UTF-8) (Open Source).
 
 This was originally a tiny prototype for the "Domain of One's Own" concept (https://domain-of-ones-own.de/). Empower students / teachers to publish their own tiny html websites with simple page navigation on Github Pages. See german blog post for more background information: https://matthias-andrasch.eu/blog/2021/web-ides-fuer-kleine-domain-of-ones-own-experimente/.
 
