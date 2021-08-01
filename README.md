@@ -44,6 +44,8 @@ The navigation is in in [src_includes/partials/nav.njk](https://github.com/mandr
 
 **Including images:**
 
+Images can be added to `src/images`. Reference them like this, without src/:
+
 ```
 <img src="{{'/images/my-new-image.jpg' | url}}">
 ```
