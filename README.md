@@ -1,10 +1,19 @@
 # 11ty-massively
 Simle fork of html5up massively theme for static site generator eleventy/11ty 
 
+Included:
+
+- pipeline for github pages
+
 [![Open in Gitpod](open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mandrasch/11ty-up-massively)<br>
 https://gitpod.io/#https://github.com/mandrasch/11ty-up-massively
 
 Online-Preview: https://mandrasch.github.io/11ty-up-massively/
+
+## Commands
+
+- Development `npm start`
+- Build project in _site-folder: `npm build`
 
 ## License
 
