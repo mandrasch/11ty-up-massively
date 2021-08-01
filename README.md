@@ -50,11 +50,13 @@ Images can be added to `src/images`. Reference them like this, without src/:
 <img src="{{'/images/my-new-image.jpg' | url}}">
 ```
 
-## Commands for terminal
+## Terminal commands:
 
-- Development preview server `npm start`
+- Install: `npm install`
+- Start development preview server `npm start`
+- Stop server: CTRL + C
+
 - Build project in _site-folder: `npm build`
-
 
 ## License
 
