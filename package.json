@@ -1,0 +1,25 @@
+{
+  "name": "11ty-up-massively",
+  "version": "1.0.0",
+  "description": "Fork of html5up massively theme (CC BY 3.0 Unported) for static site generator eleventy/11ty",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --port=3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandrasch/11ty-up-massively.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandrasch/11ty-up-massively/issues"
+  },
+  "homepage": "https://github.com/mandrasch/11ty-up-massively#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
