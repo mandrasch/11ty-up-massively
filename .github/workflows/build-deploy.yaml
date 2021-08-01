@@ -18,9 +18,11 @@ jobs:
       # The pathprefix is the repo name (https://your-username.github.io/<PATH-PREFIX>/)
       # See: https://www.11ty.dev/docs/config#deploy-to-a-subdirectory-with-a-path-prefix
       # Thanks to https://github.community/t/repository-name-in-environment-variable/16856/10
+      - run: echo "REPOSITORY_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
+        shell: bash
+
       - name: Install and Build for Github Pages 🔧
         run: |
-          echo "REPOSITORY_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
           echo ${{ env.REPOSITORY_NAME }}
           npm install
           npm run build -- --pathprefix '${{ env.REPOSITORY_NAME }}'
