@@ -1,19 +1,52 @@
 # 11ty-massively
-Simle fork of html5up massively theme for static site generator eleventy/11ty 
+Simple fork of html5up massively theme for static site generator [eleventy/11ty](https://www.google.com/search?q=eleventy+dev&oq=eleventy+dev&aqs=chrome..69i57j69i65j69i60l3.2229j0j1&sourceid=chrome&ie=UTF-8) (Open Source).
 
-Included:
+This was originally a tiny prototype for the "Domain of One's Own" concept (https://domain-of-ones-own.de/). Empower students / teachers to publish their own tiny html websites with simple page navigation on Github Pages. See german blog post for more background information: https://matthias-andrasch.eu/blog/2021/web-ides-fuer-kleine-domain-of-ones-own-experimente/.
 
-- pipeline for github pages
+## Play with it
 
-[![Open in Gitpod](open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mandrasch/11ty-up-massively)<br>
-https://gitpod.io/#https://github.com/mandrasch/11ty-up-massively
+[![Open in Gitpod](open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mandrasch/11ty-up-massively)
+
+If you forked this, change the link to your own repo:
+`https://gitpod.io/#https://github.com/mandrasch/11ty-up-massively`
 
 Online-Preview: https://mandrasch.github.io/11ty-up-massively/
 
-## Commands
+## How to edit content
 
-- Development `npm start`
+Eleventy uses a "url filter" to convert links. It is simple to use and makes sure that links are working when this site is published to a subdirectory for GitHub Pages. 
+
+Instead of normal links use the following `{{'' | url}}` syntax. It will automagically link to `src/my-new-page.html`:
+
+```
+<a href={{'/my-new-page/' | url}}>My new page</a>
+```
+
+Including images:
+```
+<img src="{{'/images/my-new-image.jpg' | url}}">
+```
+
+Edit / update navigation:
+
+https://github.com/mandrasch/11ty-up-massively/blob/main/src/_includes/partials/nav.njk
+
+Add a new page:
+
+Just add a new .html or .md page and paste the the following at the top of the file:
+
+```
+---
+title: My site title
+layout: layouts/base.njk
+---
+```
+
+## Commands for terminal
+
+- Development preview server `npm start`
 - Build project in _site-folder: `npm build`
+
 
 ## License
 
